@@ -1,0 +1,14 @@
+changelog:
+  categories:
+    - title: Doing the Good Code
+      labels:
+        - "feature"
+    - title: Bug Fixes
+      labels:
+        - "bug-fix"
+    - title: Version Bumps
+      labels:
+        - "version-bump"
+    - title: Unlabeled
+      labels:
+        - "*"
