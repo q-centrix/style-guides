@@ -10,19 +10,40 @@ Note: Anything you add to your local yml file will overwrite what is in the inhe
 
 ### Other places you will need to check
 #### Only the first time
-- Add the following to your `.gitgnore` `.rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-rubocop*`, this will ignore the file that gets created when you run rubocop locally
-- Do not gitignore your `.rubocop.yml`
-- In your `.codeclimate.yml`, make sure you are NOT referencing this file. It will use your local `.rubocop.yml` by default, and that will reference this file.
-
-#### With every update
-- Make sure your `Gemfile` specifies the same version of rubocop as the config you are using.
-- In `.codeclimate.yml` the [rubocop channel](https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions) should specify the correct version. Available channels can be found [here](https://github.com/codeclimate/codeclimate-rubocop/branches/all?utf8=%E2%9C%93&query=channel%2Frubocop)
-  ```
+1. `.codeclimate.yml`
+  1. add a config file to the plugin so it will find the file in the correct place
+    ```
     rubocop:
       enabled: true
       channel: rubocop-0-77
-  ```
+      config:
+        file: .shared-rubocop.yml
+    ```
+  2. Update the path that your fetched config will be saved to
+    ```
+      prepare:
+        fetch:
+          - url: "https://raw.githubusercontent.com/q-centrix/style-guides/main/rubocop/.rubocop-0-77.yml"
+            path: ".shared-rubocop.yml"
+      ```
+2. `.gitgnore`
+  1. remove `.rubocop.yml`
+  2. add `.rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-rubocop*`, this will ignore the file that gets created when you run rubocop locally
+  3. add `.shared-rubocop.yml` to ignore the file that codeclimate creates
 
+#### With every update
+1. `.codeclimate.yml`
+  1. Update the url fetched, this should match the url you are inheriting from in your `rubocop.yml`
+    ```
+      prepare:
+        fetch:
+          - url: "https://raw.githubusercontent.com/q-centrix/style-guides/main/rubocop/.rubocop-0-77.yml"
+            path: ".shared-rubocop.yml"
+      ```
+  2. The [rubocop channel](https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions) should specify the correct version. Available channels can be found [here](https://github.com/codeclimate/codeclimate-rubocop/branches/all?utf8=%E2%9C%93&query=channel%2Frubocop)
+2. `.rubocop.yml`
+  1. Update the url you are inheriting from. This should match the url in your `codeclimate.yml`
+3. Make sure your `Gemfile` specifies the same version of rubocop as the config you are using.
 
 
 # Contributing
