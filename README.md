@@ -8,6 +8,8 @@ inherit_from: https://raw.githubusercontent.com/q-centrix/style-guides/main/rubo
 
 Note: Anything you add to your local yml file will overwrite what is in the inherited file. Read [the docs](https://docs.rubocop.org/rubocop/1.50/configuration.html#inheriting-from-another-configuration-file-in-the-project) for more information on precedence. This can be helpful if you want to add in something such as rubocop-rspec but want to disable/enable cops as you fix them over time.
 
+**Caveat**: As long as codeclimate is pointing directly to the styleguide, anything you add to your local yml will NOT take effect in CodeClimate, but will only work locally.
+
 ### Other places you will need to check
 #### Only the first time
 1. `.codeclimate.yml`
