@@ -1,0 +1,223 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - '**/*.axlsx'
+    - '.git/**/*'
+    - 'bin/**/*'
+    - 'circle.yml'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'Guardfile'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'node_modules/**/*'
+    - 'Rakefile'
+    - 'README.md'
+    - 'spec/dummy/**/*'
+    - 'vendor/**/*'
+
+# If the cop is not mentioned here, then we are using the defualts cops
+# The default config can be found at https://github.com/rubocop/rubocop/blob/v0.77.0/config/default.yml
+# Documentation can be found at https://docs.rubocop.org/rubocop/1.0/cops.html
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+Layout/HashAlignment:
+  EnforcedHashRocketStyle:
+  - key
+  - table
+  EnforcedColonStyle:
+  - key
+  - table
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+  EnforcedStyle: no_space
+
+Metrics/AbcSize:
+  Exclude:
+  - spec/**/*
+Metrics/BlockLength:
+  Exclude:
+  - lib/tasks/**/*
+  - spec/**/*
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+  - spec/**/*
+Metrics/ModuleLength:
+  Max: 100
+  Exclude:
+  - spec/**/*
+
+Naming/PredicateName:
+  ForbiddenPrefixes:
+  - is_
+
+Style/CollectionMethods:
+  Enabled: true
+  PreferredMethods:
+    collect: map
+    collect!: map!
+    inject: reduce
+    find_all: select
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '()'
+    '%w': '()'
+    '%W': '()'
+Style/WordArray:
+  WordRegex: !ruby/regexp /\A[\p{Word}]+\z/
+
+
+# Disabled cops
+Layout/ConditionPosition:
+  Enabled: false
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+Layout/ExtraSpacing:
+  Enabled: false
+Layout/SpaceBeforeFirstArg:
+  Enabled: false
+Layout/TrailingEmptyLines:
+  Enabled: false
+
+Lint/AmbiguousOperator:
+  Enabled: false
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+Lint/AssignmentInCondition:
+  Enabled: false
+Lint/DeprecatedClassMethods:
+  Enabled: false
+Lint/ElseLayout:
+  Enabled: false
+Lint/FlipFlop:
+  Enabled: false
+Lint/LiteralInInterpolation:
+  Enabled: false
+Lint/Loop:
+  Enabled: false
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
+Lint/RedundantCopDisableDirective:
+  Enabled: false
+Lint/RequireParentheses:
+  Enabled: false
+Lint/SuppressedException:
+  Enabled: false
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
+Lint/Void:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/AsciiIdentifiers:
+  Enabled: false
+Naming/BinaryOperatorParameterName:
+  Enabled: false
+Naming/FileName:
+  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Rails/ActionFilter:
+  Enabled: false
+Rails/Delegate:
+  Enabled: false
+Rails/DynamicFindBy:
+  Enabled: false
+Rails/IndexWith:
+  Enabled: false
+Rails/FilePath:
+  Enabled: false
+Rails/FindBy:
+  Enabled: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+Rails/HttpPositionalArguments:
+  Enabled: false
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+Rails/OutputSafety:
+  Enabled: false
+Rails/SkipsModelValidations:
+  Enabled: false
+Rails/ApplicationController:
+  Enabled: false
+
+Style/Alias:
+  Enabled: false
+Style/AsciiComments:
+  Enabled: false
+Style/Attr:
+  Enabled: false
+Style/CaseEquality:
+  Enabled: false
+Style/CharacterLiteral:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/CommentAnnotation:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false
+Style/EachWithObject:
+  Enabled: false
+Style/Encoding:
+  Enabled: false
+Style/FormatString:
+  Enabled: false
+Style/GlobalVars:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/LambdaCall:
+  Enabled: false
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+Style/NegatedWhile:
+  Enabled: false
+Style/Next:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/RaiseArgs:
+  Enabled: false
+Style/RedundantBegin:
+  Enabled: false
+Style/RegexpLiteral:
+  Enabled: false
+Style/RescueStandardError:
+  Enabled: false
+Style/SignalException:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
+Style/TrivialAccessors:
+  Enabled: false
+Style/VariableInterpolation:
+  Enabled: false
+Style/WhenThen:
+  Enabled: false
+Style/WhileUntilModifier:
+  Enabled: false
+  
