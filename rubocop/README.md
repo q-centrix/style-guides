@@ -19,7 +19,7 @@ Note: Anything you add to your local yml file will overwrite what is in the inhe
         ```
 2. `.gitgnore`
     1. remove `.rubocop.yml`
-    2. add `.rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-rubocop*`, this will ignore the file that gets created when you run rubocop
+    2. add `.rubocop-https*`, this will ignore the file that gets created when you run rubocop
 
 #### With every update
 1. `.codeclimate.yml`
@@ -29,8 +29,11 @@ Note: Anything you add to your local yml file will overwrite what is in the inhe
             fetch:
               - url: "https://raw.githubusercontent.com/q-centrix/style-guides/main/rubocop/.rubocop-0-77.yml"
                 path: ".rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-rubocop--rubocop-0-77-yml"
-          ```
+        ```
     2. The [rubocop channel](https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions) should specify the correct version. Available channels can be found [here](https://github.com/codeclimate/codeclimate-rubocop/branches/all?utf8=%E2%9C%93&query=channel%2Frubocop)
+        ```
+          channel: rubocop-0-77
+        ```
 2. `.rubocop.yml`
     1. Update the url you are inheriting from. This should match the url in your `codeclimate.yml`
 3. Make sure your `Gemfile` specifies the same version of rubocop as the config you are using.
