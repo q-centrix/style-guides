@@ -21,6 +21,7 @@ AllCops:
 
 # If the cop is not mentioned here, then we are using the defualts cops
 # The default config can be found at https://github.com/rubocop/rubocop/blob/v0.77.0/config/default.yml
+# rspec default config https://github.com/rubocop/rubocop-rspec/blob/v1.41.0/config/default.yml
 # Documentation can be found at https://docs.rubocop.org/rubocop/1.0/cops.html
 
 Layout/DotPosition:
