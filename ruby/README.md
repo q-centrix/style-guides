@@ -27,8 +27,8 @@ Note: Anything you add to your local yml file will overwrite what is in the inhe
         ```
           prepare:
             fetch:
-              - url: "https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-0-77.yml"
-                path: ".rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-ruby--rubocop-0-77-yml"
+            - url: "https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-0-77.yml"
+              path: ".rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-ruby--rubocop-0-77-yml"
         ```
     2. The [rubocop channel](https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions) should specify the correct version. Available channels can be found [here](https://github.com/codeclimate/codeclimate-rubocop/branches/all?utf8=%E2%9C%93&query=channel%2Frubocop)
         ```
