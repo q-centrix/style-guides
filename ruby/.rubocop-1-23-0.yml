@@ -78,6 +78,7 @@ Lint/RequireRelativeSelfPath: # new in 1.22
   Enabled: true
 Lint/SymbolConversion: # new in 1.9
   Enabled: true
+  EnforcedStyle: consistent
 Lint/ToEnumArguments: # new in 1.1
   Enabled: true
 Lint/TripleQuotes: # new in 1.9
@@ -171,6 +172,7 @@ Style/WordArray:
 
 
 # Disabled cops
+
 Layout/ConditionPosition:
   Enabled: false
 Layout/EmptyLineAfterMagicComment:
@@ -315,6 +317,8 @@ Style/SignalException:
 Style/SingleArgumentDig:
   Enabled: false
 Style/SpecialGlobalVars:
+  Enabled: false
+Style/StringConcatenation:
   Enabled: false
 Style/TrivialAccessors:
   Enabled: false
