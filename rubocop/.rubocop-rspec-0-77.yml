@@ -56,6 +56,15 @@ Naming/PredicateName:
   ForbiddenPrefixes:
   - is_
 
+RSpec/ExampleLength:
+  Max: 15
+RSpec/ExpectChange:
+  EnforcedStyle: block
+RSpec/InstanceVariable:
+  AssignmentOnly: true
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+
 Style/CollectionMethods:
   Enabled: true
   PreferredMethods:
@@ -73,6 +82,7 @@ Style/WordArray:
 
 
 # Disabled cops
+
 Layout/ConditionPosition:
   Enabled: false
 Layout/EmptyLineAfterMagicComment:
@@ -159,6 +169,29 @@ Rails/SkipsModelValidations:
   Enabled: false
 Rails/ApplicationController:
   Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+# RSpec/BeEql:
+  # Enabled: needs more discussion
+RSpec/DescribeClass:
+  Enabled: false
+RSpec/ExpectInHook:
+  Enabled: false
+RSpec/FilePath:
+  Enabled: false
+RSpec/LetSetup:
+  Enabled: false
+RSpec/MessageChain:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/NamedSubject:
+  Enabled: false
+RSpec/NestedGroups:
+  Enabled: false
+# RSpec/SubjectStub:
+  # Enabled: needs more discussion
 
 Style/Alias:
   Enabled: false
