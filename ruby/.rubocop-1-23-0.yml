@@ -302,8 +302,6 @@ Style/Next:
   Enabled: false
 Style/NumericLiterals:
   Enabled: false
-Style/OptionalBooleanParameter:
-  Enabled: false
 Style/RaiseArgs:
   Enabled: false
 Style/RedundantBegin:
