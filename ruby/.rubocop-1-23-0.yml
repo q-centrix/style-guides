@@ -316,8 +316,6 @@ Style/SingleArgumentDig:
   Enabled: false
 Style/SpecialGlobalVars:
   Enabled: false
-Style/StringConcatenation:
-  Enabled: false
 Style/TrivialAccessors:
   Enabled: false
 Style/VariableInterpolation:
