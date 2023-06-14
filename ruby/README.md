@@ -36,4 +36,4 @@ Note: Anything you add to your local yml file will overwrite what is in the inhe
         ```
 2. `.rubocop.yml`
     1. Update the url you are inheriting from. This should match the url in your `codeclimate.yml`
-3. Make sure your `Gemfile` specifies the same version of rubocop as the config you are using.
+3. Make sure your `Gemfile` or `gemspec` specifies the same version of rubocop as the config you are using.
