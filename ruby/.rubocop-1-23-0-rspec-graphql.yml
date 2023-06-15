@@ -329,6 +329,7 @@ Style/WhileUntilModifier:
 
 
 # for rubocop-rspec
+# Documentation can be found at https://docs.rubocop.org/rubocop-rspec/2.10/cops_rspec.html
 
 RSpec/AnyInstance:
   Enabled: false
@@ -375,3 +376,11 @@ RSpec/FactoryBot/SyntaxMethods: # new in 2.7
   Enabled: true
 RSpec/Rails/AvoidSetupHook: # new in 2.4
   Enabled: true
+
+# for rubocop-graphql
+# Documentation can be found at https://www.rubydoc.info/gems/rubocop-graphql/1.1.1/RuboCop/Cop/GraphQL
+
+GraphQL/MaxComplexitySchema:
+  Enabled: false
+GraphQL/MaxDepthSchema:
+  Enabled: false

@@ -328,6 +328,7 @@ Style/WhileUntilModifier:
 
 
 # for rubocop-rspec
+# Documentation can be found at https://docs.rubocop.org/rubocop-rspec/2.10/cops_rspec.html
 
 RSpec/AnyInstance:
   Enabled: false
