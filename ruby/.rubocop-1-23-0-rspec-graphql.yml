@@ -380,7 +380,11 @@ RSpec/Rails/AvoidSetupHook: # new in 2.4
 # for rubocop-graphql
 # Documentation can be found at https://www.rubydoc.info/gems/rubocop-graphql/1.1.1/RuboCop/Cop/GraphQL
 
+GraphQL/GraphqlName:
+  Enabled: false
 GraphQL/MaxComplexitySchema:
   Enabled: false
 GraphQL/MaxDepthSchema:
+  Enabled: false
+GraphQL/ObjectDescription:
   Enabled: false
