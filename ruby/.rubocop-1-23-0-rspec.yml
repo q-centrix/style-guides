@@ -330,6 +330,8 @@ Style/WhileUntilModifier:
 # for rubocop-rspec
 # Documentation can be found at https://docs.rubocop.org/rubocop-rspec/2.10/cops_rspec.html
 
+RSpec/AlignLeftLetBrace:
+  Enabled: true
 RSpec/AnyInstance:
   Enabled: false
 RSpec/DescribeClass:
@@ -351,6 +353,8 @@ RSpec/MessageChain:
 RSpec/MessageSpies:
   EnforcedStyle: receive
 RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/MultipleMemoizedHelpers:
   Enabled: false
 RSpec/NamedSubject:
   Enabled: false
