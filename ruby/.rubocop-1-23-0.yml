@@ -234,6 +234,8 @@ Naming/FileName:
   Enabled: false
 Naming/MemoizedInstanceVariableName:
   Enabled: false
+Naming/VariableNumber:
+  Enabled: false
 
 Rails/ActionFilter:
   Enabled: false
