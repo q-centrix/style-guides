@@ -89,11 +89,6 @@ Naming/PredicateName:
 
 Style/CollectionMethods:
   Enabled: true
-  PreferredMethods:
-    collect: map
-    collect!: map!
-    inject: reduce
-    find_all: select
 Style/Documentation:
   Enabled: false
 Style/FormatString:
