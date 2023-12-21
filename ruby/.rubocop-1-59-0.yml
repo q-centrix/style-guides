@@ -129,3 +129,7 @@ Rails/ToFormattedS:
   EnforcedStyle: to_formatted_s
 Rails/WhereExists:
   EnforcedStyle: where
+
+# For this file, you will need the following gems:
+  # gem 'rubocop', '~> 1.59.0'
+  # gem 'rubocop-rails'
