@@ -165,10 +165,16 @@ RSpec/NamedSubject:
 RSpec/NestedGroups:
   Enabled: false
 
-# The following repos will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
+# Repos that do not have `config.infer_spec_type_from_file_location!` will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
+# This affects the following repos
   # neutrino_client_api_gem
   # q-apps-models
   # q-apps-support
   # data-science-integration
   # json_api_helpers
   # reporting-data-mart
+
+# For this file, you will need the following gems:
+  # gem 'rubocop', '~> 1.59.0'
+  # gem 'rubocop-rails'
+  # gem 'rubocop-rspec'

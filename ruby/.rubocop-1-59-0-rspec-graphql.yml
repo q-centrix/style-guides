@@ -166,14 +166,6 @@ RSpec/NamedSubject:
 RSpec/NestedGroups:
   Enabled: false
 
-# The following repos will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
-  # neutrino_client_api_gem
-  # q-apps-models
-  # q-apps-support
-  # data-science-integration
-  # json_api_helpers
-  # reporting-data-mart
-
 # for rubocop-graphql
 # Documentation can be found at https://www.rubydoc.info/gems/rubocop-graphql/1.4.0/RuboCop/Cop/GraphQL
 
@@ -183,3 +175,18 @@ GraphQL/MaxComplexitySchema:
   Enabled: false
 GraphQL/MaxDepthSchema:
   Enabled: false
+
+# Repos that do not have `config.infer_spec_type_from_file_location!` will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
+# This affects the following repos
+  # neutrino_client_api_gem
+  # q-apps-models
+  # q-apps-support
+  # data-science-integration
+  # json_api_helpers
+  # reporting-data-mart
+
+# For this file, you will need the following gems:
+  # gem 'rubocop', '~> 1.59.0'
+  # gem 'rubocop-rails'
+  # gem 'rubocop-rspec'
+  # gem 'rubocop-graphql'
