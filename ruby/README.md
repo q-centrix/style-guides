@@ -40,3 +40,4 @@ When you are ready to upgrade rubocop to a different version, change the file yo
         ```
 3. Make sure your `Gemfile` or `gemspec` specifies the same version of rubocop as the config you are using.
 4. If you are going to use other rubocop gems (i.e. rubocop-rspec or rubocop-graphql) you need to add them to your gemfile. (These will also be listed under `require` at the top of the yml file)
+    1. Starting with version 1.59.0 there is a comment at the bottom of the files stating which gems are needed.
