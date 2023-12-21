@@ -20,8 +20,8 @@ AllCops:
   NewCops: enable
 
 # If the cop is not mentioned here, then we are using the defualts cops
-# The default config can be found at https://github.com/rubocop/rubocop/blob/v1.56.3/config/default.yml
-# Documentation can be found at https://docs.rubocop.org/rubocop/1.56/cops.html
+# The default config can be found at https://github.com/rubocop/rubocop/blob/v1.59.0/config/default.yml
+# Documentation can be found at https://docs.rubocop.org/rubocop/1.59/cops.html
 
 Gemspec/DevelopmentDependencies:
   EnforcedStyle: gemspec
@@ -117,7 +117,7 @@ Style/StringConcatenation:
 Style/WordArray:
   WordRegex: !ruby/regexp /\A[\p{Word}]+\z/
 
-# Rails Cops https://docs.rubocop.org/rubocop-rails/2.21/cops_rails.html
+# Rails Cops https://docs.rubocop.org/rubocop-rails/2.23/cops_rails.html
 
 Rails/FindBy:
   IgnoreWhereFirst: false
