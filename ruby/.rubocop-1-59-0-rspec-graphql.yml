@@ -1,0 +1,185 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-graphql
+
+AllCops:
+  Exclude:
+    - '**/*.axlsx'
+    - '.git/**/*'
+    - 'bin/**/*'
+    - 'circle.yml'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'Guardfile'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'node_modules/**/*'
+    - 'Rakefile'
+    - 'README.md'
+    - 'spec/dummy/**/*'
+    - 'vendor/**/*'
+  NewCops: enable
+
+# If the cop is not mentioned here, then we are using the defualts cops
+# The default config can be found at https://github.com/rubocop/rubocop/blob/v1.59.0/config/default.yml
+# Documentation can be found at https://docs.rubocop.org/rubocop/1.59/cops.html
+
+Gemspec/DevelopmentDependencies:
+  EnforcedStyle: gemspec
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+Layout/HashAlignment:
+  EnforcedHashRocketStyle:
+  - key
+  - table
+  EnforcedColonStyle:
+  - key
+  - table
+Layout/LineContinuationSpacing:
+  EnforcedStyle: no_space
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
+
+Lint/AmbiguousOperator:
+  Enabled: false
+Lint/FlipFlop:
+  Enabled: false
+Lint/Loop:
+  Enabled: false
+Lint/SymbolConversion:
+  EnforcedStyle: consistent
+
+Metrics/AbcSize:
+  Exclude:
+  - spec/**/*
+Metrics/BlockLength:
+  Exclude:
+  - lib/tasks/**/*
+  - spec/**/*
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+  - spec/**/*
+Metrics/ModuleLength:
+  Max: 100
+  Exclude:
+  - spec/**/*
+
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+Naming/VariableNumber:
+  Enabled: false
+Naming/PredicateName:
+  ForbiddenPrefixes:
+  - is_
+
+Style/CollectionMethods:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Style/FormatString:
+  Enabled: false
+Style/HashLikeCase:
+  MinBranchesCount: 4
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '()'
+    '%w': '()'
+    '%W': '()'
+Style/RaiseArgs:
+  Enabled: false
+Style/SignalException:
+  EnforcedStyle: semantic
+Style/SingleArgumentDig:
+  Enabled: false
+Style/StringConcatenation:
+  Mode: conservative
+Style/WordArray:
+  WordRegex: !ruby/regexp /\A[\p{Word}]+\z/
+
+# Rails Cops https://docs.rubocop.org/rubocop-rails/2.23/cops_rails.html
+
+Rails/FindBy:
+  IgnoreWhereFirst: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+Rails/ToFormattedS:
+  EnforcedStyle: to_formatted_s
+Rails/WhereExists:
+  EnforcedStyle: where
+
+# for rubocop-rspec
+# Documentation can be found at https://docs.rubocop.org/rubocop-rspec/2.25/cops_rspec.html
+
+RSpec/AlignLeftLetBrace:
+  Enabled: true
+RSpec/AnyInstance:
+  Enabled: false
+RSpec/ExampleLength:
+  Max: 15
+RSpec/ExpectChange:
+  EnforcedStyle: block
+RSpec/ExpectInHook:
+  Enabled: false
+RSpec/FilePath:
+  Enabled: false
+Rspec/IndexedLet:
+  Enabled: false
+RSpec/InstanceVariable:
+  AssignmentOnly: true
+RSpec/LetSetup:
+  Enabled: false
+RSpec/MessageChain:
+  Enabled: false
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+RSpec/NamedSubject:
+  Enabled: false
+RSpec/NestedGroups:
+  Enabled: false
+
+# The following repos will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
+  # neutrino_client_api_gem
+  # q-apps-models
+  # q-apps-support
+  # data-science-integration
+  # json_api_helpers
+  # reporting-data-mart
+
+# for rubocop-graphql
+# Documentation can be found at https://www.rubydoc.info/gems/rubocop-graphql/1.4.0/RuboCop/Cop/GraphQL
+
+GraphQL/GraphqlName:
+  Enabled: false
+GraphQL/MaxComplexitySchema:
+  Enabled: false
+GraphQL/MaxDepthSchema:
+  Enabled: false
