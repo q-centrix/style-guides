@@ -1,6 +1,7 @@
 require:
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-performance
 
 AllCops:
   Exclude:
@@ -118,7 +119,8 @@ Style/StringConcatenation:
 Style/WordArray:
   WordRegex: !ruby/regexp /\A[\p{Word}]+\z/
 
-# Rails Cops https://docs.rubocop.org/rubocop-rails/2.23/cops_rails.html
+# for rubocop-rails
+# Documentation can be found at https://docs.rubocop.org/rubocop-rails/2.23/cops_rails.html
 
 Rails/FindBy:
   IgnoreWhereFirst: false
@@ -165,6 +167,21 @@ RSpec/NamedSubject:
 RSpec/NestedGroups:
   Enabled: false
 
+# for rubocop-performance
+# Documentation can be found at https://docs.rubocop.org/rubocop-performance/1.20/cops_performance.html
+
+Performance/CaseWhenSplat:
+  Enabled: true
+Performance/ChainArrayAllocation:
+  Enabled: true
+Performance/IoReadlines:
+  Enabled: true
+# Performance/RangeInclude:
+#   Enabled: unsure
+Performance/SelectMap:
+  Enabled: true
+
+
 # Repos that do not have `config.infer_spec_type_from_file_location!` will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
 # This affects the following repos
   # neutrino_client_api_gem
@@ -175,6 +192,7 @@ RSpec/NestedGroups:
   # reporting-data-mart
 
 # For this file, you will need the following gems:
-  # gem 'rubocop', '~> 1.59.0'
+  # gem 'rubocop', '~> 1.60.0'
   # gem 'rubocop-rails'
   # gem 'rubocop-rspec'
+  # gem 'rubocop-performance'
