@@ -23,8 +23,8 @@ AllCops:
   NewCops: enable
 
 # If the cop is not mentioned here, then we are using the defualts cops
-# The default config can be found at https://github.com/rubocop/rubocop/blob/v1.59.0/config/default.yml
-# Documentation can be found at https://docs.rubocop.org/rubocop/1.59/cops.html
+# The default config can be found at https://github.com/rubocop/rubocop/blob/v1.60.2/config/default.yml
+# Documentation can be found at https://docs.rubocop.org/rubocop/1.60/cops.html
 
 Gemspec/DevelopmentDependencies:
   EnforcedStyle: gemspec
@@ -135,7 +135,7 @@ Rails/WhereExists:
   EnforcedStyle: where
 
 # for rubocop-rspec
-# Documentation can be found at https://docs.rubocop.org/rubocop-rspec/2.25/cops_rspec.html
+# Documentation can be found at https://docs.rubocop.org/rubocop-rspec/2.26/cops_rspec.html
 
 RSpec/AlignLeftLetBrace:
   Enabled: true
@@ -183,7 +183,7 @@ Performance/SelectMap:
   Enabled: true
 
 # for rubocop-graphql
-# Documentation can be found at https://www.rubydoc.info/gems/rubocop-graphql/1.4.0/RuboCop/Cop/GraphQL
+# Documentation can be found at https://www.rubydoc.info/gems/rubocop-graphql/1.5.0/RuboCop/Cop/GraphQL
 
 GraphQL/GraphqlName:
   Enabled: false
