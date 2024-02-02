@@ -149,7 +149,7 @@ RSpec/ExpectInHook:
   Enabled: false
 RSpec/FilePath:
   Enabled: false
-Rspec/IndexedLet:
+RSpec/IndexedLet:
   Enabled: false
 RSpec/InstanceVariable:
   AssignmentOnly: true
@@ -193,7 +193,7 @@ GraphQL/MaxDepthSchema:
   Enabled: false
 
 
-# Repos that do not have `config.infer_spec_type_from_file_location!` will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
+# Repos that do not have `config.infer_spec_type_from_file_location!` will want to disable `RSpec/Rails/InferredSpecType` in their local rubocop.yml
 # This affects the following repos
   # neutrino_client_api_gem
   # q-apps-models
