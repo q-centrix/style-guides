@@ -150,7 +150,7 @@ RSpec/ExpectInHook:
   Enabled: false
 RSpec/FilePath:
   Enabled: false
-Rspec/IndexedLet:
+RSpec/IndexedLet:
   Enabled: false
 RSpec/InstanceVariable:
   AssignmentOnly: true
