@@ -34,7 +34,7 @@ When you are ready to upgrade rubocop to a different version, change the file yo
             - url: "https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-0-77.yml"
               path: ".rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-ruby--rubocop-0-77-yml"
         ```
-    2. The [rubocop channel](https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions) should specify the correct version. Available channels can be found [here](https://github.com/codeclimate/codeclimate-rubocop/branches/all?utf8=%E2%9C%93&query=channel%2Frubocop)
+    2. The [rubocop channel](https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions) should specify the correct version. Available channels can be found [here](https://github.com/codeclimate/codeclimate-rubocop/branches/all?utf8=%E2%9C%93&query=channel%2Frubocop). **IMPORTANT NOTE: For version 1.60 you can use either `rubocop-1-56-3` or `beta` as the channel.**
         ```
           channel: rubocop-0-77
         ```
