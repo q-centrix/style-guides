@@ -1,0 +1,202 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-performance
+  - rubocop-capybara
+  - rubocop-factory_bot
+
+AllCops:
+  Exclude:
+    - '**/*.axlsx'
+    - '.git/**/*'
+    - 'bin/**/*'
+    - 'circle.yml'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'Guardfile'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'node_modules/**/*'
+    - 'Rakefile'
+    - 'README.md'
+    - 'spec/dummy/**/*'
+    - 'vendor/**/*'
+  NewCops: enable
+
+# If the cop is not mentioned here, then we are using the defualts cops
+# The default config can be found at https://github.com/rubocop/rubocop/blob/v1.60.2/config/default.yml
+# Documentation can be found at https://docs.rubocop.org/rubocop/1.60/cops.html
+
+Gemspec/DevelopmentDependencies:
+  EnforcedStyle: gemspec
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+Layout/HashAlignment:
+  EnforcedHashRocketStyle:
+  - key
+  - table
+  EnforcedColonStyle:
+  - key
+  - table
+Layout/LineContinuationSpacing:
+  EnforcedStyle: no_space
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
+
+Lint/AmbiguousOperator:
+  Enabled: false
+Lint/FlipFlop:
+  Enabled: false
+Lint/Loop:
+  Enabled: false
+Lint/SymbolConversion:
+  EnforcedStyle: consistent
+
+Metrics/AbcSize:
+  Exclude:
+  - spec/**/*
+Metrics/BlockLength:
+  Exclude:
+  - lib/tasks/**/*
+  - spec/**/*
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+  - spec/**/*
+Metrics/ModuleLength:
+  Max: 100
+  Exclude:
+  - spec/**/*
+
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+Naming/VariableNumber:
+  Enabled: false
+Naming/PredicateName:
+  ForbiddenPrefixes:
+  - is_
+
+Style/CollectionMethods:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Style/FormatString:
+  Enabled: false
+Style/HashLikeCase:
+  MinBranchesCount: 4
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '()'
+    '%w': '()'
+    '%W': '()'
+Style/RaiseArgs:
+  Enabled: false
+Style/SignalException:
+  EnforcedStyle: semantic
+Style/SingleArgumentDig:
+  Enabled: false
+Style/StringConcatenation:
+  Mode: conservative
+Style/WordArray:
+  WordRegex: !ruby/regexp /\A[\p{Word}]+\z/
+
+# for rubocop-rails
+# Documentation can be found at https://docs.rubocop.org/rubocop-rails/2.23/cops_rails.html
+
+Rails/FindBy:
+  IgnoreWhereFirst: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+Rails/ToFormattedS:
+  EnforcedStyle: to_formatted_s
+Rails/WhereExists:
+  EnforcedStyle: where
+
+# for rubocop-rspec
+# Documentation can be found at https://docs.rubocop.org/rubocop-rspec/2.26/cops_rspec.html
+
+RSpec/AlignLeftLetBrace:
+  Enabled: true
+RSpec/AnyInstance:
+  Enabled: false
+RSpec/ExampleLength:
+  Max: 15
+RSpec/ExpectChange:
+  EnforcedStyle: block
+RSpec/ExpectInHook:
+  Enabled: false
+RSpec/FilePath:
+  Enabled: false
+RSpec/IndexedLet:
+  Enabled: false
+RSpec/InstanceVariable:
+  AssignmentOnly: true
+RSpec/LetSetup:
+  Enabled: false
+RSpec/MessageChain:
+  Enabled: false
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+RSpec/NamedSubject:
+  Enabled: false
+RSpec/NestedGroups:
+  Enabled: false
+
+# for rubocop-performance
+# Documentation can be found at https://docs.rubocop.org/rubocop-performance/1.20/cops_performance.html
+
+Performance/CaseWhenSplat:
+  Enabled: true
+Performance/ChainArrayAllocation:
+  Enabled: true
+Performance/IoReadlines:
+  Enabled: true
+# Performance/RangeInclude:
+#   Enabled: unsure
+Performance/SelectMap:
+  Enabled: true
+
+
+# Repos that do not have `config.infer_spec_type_from_file_location!` will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
+# This affects the following repos
+  # neutrino_client_api_gem
+  # q-apps-models
+  # q-apps-support
+  # data-science-integration
+  # json_api_helpers
+  # reporting-data-mart
+
+# For this file, you will need the following gems:
+  # gem 'rubocop', '~> 1.60.0'
+  # gem 'rubocop-rails'
+  # gem 'rubocop-rspec'
+  # gem 'rubocop-performance'
+  # gem 'rubocop-capybara'
+  # gem 'rubocop-factory_bot'
