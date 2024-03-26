@@ -188,7 +188,6 @@ Performance/SelectMap:
 
 # Repos that do not have `config.infer_spec_type_from_file_location!` will want to disable `Rspec/Rails/InferredSpecType` in their local rubocop.yml
 # This affects the following repos
-  # neutrino_client_api_gem
   # q-apps-models
   # q-apps-support
   # data-science-integration
