@@ -197,7 +197,7 @@ Performance/SelectMap:
 # For this file, you will need the following gems:
   # gem 'rubocop', '~> 1.60.0'
   # gem 'rubocop-capybara'
-  # gem 'rubocop-factory_bot'
+  # gem 'rubocop-factory_bot', '< 2.26.0'
   # gem 'rubocop-performance'
   # gem 'rubocop-rails'
   # gem 'rubocop-rspec'
