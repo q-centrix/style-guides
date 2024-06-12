@@ -173,6 +173,8 @@ RSpec/NestedGroups:
 
 # for rubocop-capybara
 # Documentation can be found at https://docs.rubocop.org/rubocop-capybara/cops_capybara.html#capybaraclicklinkorbuttonstyle
+Capybara/ClickLinkOrButtonStyle:
+  EnforcedStyle: link_or_button
 Capybara/NegationMatcher:
   EnforcedStyle: not_to
 
