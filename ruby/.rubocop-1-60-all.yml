@@ -172,6 +172,13 @@ RSpec/NamedSubject:
 RSpec/NestedGroups:
   Enabled: false
 
+# for rubocop-capybara
+# Documentation can be found at https://docs.rubocop.org/rubocop-capybara/cops_capybara.html#capybaraclicklinkorbuttonstyle
+Capybara/ClickLinkOrButtonStyle:
+  EnforcedStyle: link_or_button
+Capybara/NegationMatcher:
+  EnforcedStyle: not_to
+
 # for rubocop-performance
 # Documentation can be found at https://docs.rubocop.org/rubocop-performance/1.20/cops_performance.html
 
@@ -181,8 +188,6 @@ Performance/ChainArrayAllocation:
   Enabled: true
 Performance/IoReadlines:
   Enabled: true
-# Performance/RangeInclude:
-#   Enabled: unsure
 Performance/SelectMap:
   Enabled: true
 
