@@ -127,6 +127,9 @@ Style/WordArray:
 # for rubocop-rails
 # Documentation can be found at https://docs.rubocop.org/rubocop-rails/2.23/cops_rails.html
 
+
+Rails/FilePath:
+  Enabled: false
 Rails/FindBy:
   IgnoreWhereFirst: false
 Rails/HasManyOrHasOneDependent:
@@ -150,8 +153,6 @@ RSpec/ExampleLength:
 RSpec/ExpectChange:
   EnforcedStyle: block
 RSpec/ExpectInHook:
-  Enabled: false
-RSpec/FilePath:
   Enabled: false
 RSpec/IndexedLet:
   Enabled: false
