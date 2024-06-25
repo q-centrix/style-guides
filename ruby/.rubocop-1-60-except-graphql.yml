@@ -205,4 +205,4 @@ Performance/SelectMap:
   # gem 'rubocop-factory_bot', '< 2.26.0'
   # gem 'rubocop-performance'
   # gem 'rubocop-rails'
-  # gem 'rubocop-rspec'
+  # gem 'rubocop-rspec', '>= 3.0.0'
