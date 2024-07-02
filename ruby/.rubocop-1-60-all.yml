@@ -127,7 +127,6 @@ Style/WordArray:
 # for rubocop-rails
 # Documentation can be found at https://docs.rubocop.org/rubocop-rails/2.23/cops_rails.html
 
-
 Rails/FilePath:
   Enabled: false
 Rails/FindBy:
