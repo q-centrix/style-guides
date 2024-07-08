@@ -207,7 +207,6 @@ GraphQL/MaxDepthSchema:
 # This affects the following repos
   # q-apps-models
   # q-apps-support
-  # data-science-integration
   # json_api_helpers
   # reporting-data-mart
 
