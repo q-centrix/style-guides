@@ -218,4 +218,4 @@ GraphQL/MaxDepthSchema:
   # gem 'rubocop-performance', '~> 1.21.0'
   # gem 'rubocop-rails', '~> 2.25.0'
   # gem 'rubocop-rspec', '~> 3.0.0'
-  # gem 'rubocop-rspec_rails', '~> 2.30.0'
+  # gem 'rubocop-rspec_rails', '~> 2.29.0'
