@@ -4,6 +4,7 @@ require:
   - rubocop-performance
   - rubocop-capybara
   - rubocop-factory_bot
+  - rubocop-rspec_rails
 
 AllCops:
   Exclude:
@@ -199,10 +200,10 @@ Performance/SelectMap:
   # reporting-data-mart
 
 # For this file, you will need the following gems:
-  # gem 'rubocop', '~> 1.60.0'
+  # gem 'rubocop', '~> 1.65.0'
   # gem 'rubocop-capybara', '~>2.21.0'
-  # gem 'rubocop-factory_bot', '~> 2.25.0'
+  # gem 'rubocop-factory_bot', '~> 2.26.0'
   # gem 'rubocop-performance', '~> 1.21.0'
   # gem 'rubocop-rails', '~> 2.25.0'
   # gem 'rubocop-rspec', '~> 3.0.0'
-  # gem 'rubocop-rspec_rails', '~> 2.29.0'
+  # gem 'rubocop-rspec_rails', '~> 2.30.0'
