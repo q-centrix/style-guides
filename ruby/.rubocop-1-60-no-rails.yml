@@ -115,3 +115,6 @@ Style/StringConcatenation:
   Mode: conservative
 Style/WordArray:
   WordRegex: !ruby/regexp /\A[\p{Word}]+\z/
+
+# For this file, you will need the following gems:
+  # gem 'rubocop', '~> 1.65.0'
