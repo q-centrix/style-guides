@@ -78,10 +78,12 @@ Metrics/MethodLength:
   Max: 15
   Exclude:
   - spec/**/*
+  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
 Metrics/ModuleLength:
   Max: 100
   Exclude:
   - spec/**/*
+  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
 
 Naming/AccessorMethodName:
   Enabled: false
