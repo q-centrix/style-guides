@@ -62,9 +62,6 @@ default = true
 
 
 [[plugin]]
-name = "actionlint"
-
-[[plugin]]
 name = "checkov"
 
 [[plugin]]
