@@ -1,5 +1,5 @@
 
-require:
+plugins:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-performance
@@ -93,7 +93,7 @@ Naming/MemoizedInstanceVariableName:
   Enabled: false
 Naming/VariableNumber:
   Enabled: false
-Naming/PredicateName:
+Naming/PredicatePrefix:
   ForbiddenPrefixes:
   - is_
 
