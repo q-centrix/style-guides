@@ -40,6 +40,17 @@ exclude_patterns = [
   "**/templates/**",
   "**/testdata/**",
   "**/vendor/**",
+  "bin/",
+  "circle.yml",
+  "CHANGELOG.md",
+  "config/",
+  "db/data/",
+  "db/migrate/",
+  "Gemfile",
+  "Gemfile.lock",
+  "LICENSE",
+  "Rakefile",
+  "README.md",
 ]
 
 test_patterns = [
@@ -56,10 +67,91 @@ test_patterns = [
 [smells]
 mode = "comment"
 
+[smells.boolean_logic]
+threshold = 4
+
+[smells.file_complexity]
+threshold = 55
+enabled = false
+
+[smells.return_statements]
+threshold = 4
+
+[smells.nested_control_flow]
+threshold = 4
+
+[smells.function_parameters]
+threshold = 6
+
+[smells.function_complexity]
+threshold = 5
+
+[smells.duplication]
+enabled = true
+threshold = 20
+
 [[source]]
 name = "default"
 default = true
 
 
 [[plugin]]
+name = "actionlint"
+
+[[plugin]]
 name = "checkov"
+
+[[plugin]]
+name = "coffeelint"
+mode = "comment"
+
+[[plugin]]
+name = "dotenv-linter"
+mode = "comment"
+
+[[plugin]]
+name = "markdownlint"
+mode = "comment"
+
+[[plugin]]
+name = "osv-scanner"
+
+[[plugin]]
+name = "radarlint-ruby"
+
+[[ignore]]
+plugins = ['radarlint-ruby']
+file_patterns = ['spec/**']
+
+[[plugin]]
+name = "ripgrep"
+mode = "comment"
+
+[[plugin]]
+name = "rubocop"
+version = "1.65.1"
+package_file = "Gemfile"
+package_filters = ["rubocop"]
+
+[[plugin.fetch]]
+url = "https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-1-60-all.yml"
+path = ".rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-ruby--rubocop-1-60-all-yml"
+
+[[plugin]]
+name = "shellcheck"
+
+[[plugin]]
+name = "shfmt"
+
+[[plugin]]
+name = "trivy"
+drivers = [
+  "config",
+  "fs-vuln",
+]
+
+[[plugin]]
+name = "trufflehog"
+
+[[plugin]]
+name = "yamllint"
