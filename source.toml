@@ -119,7 +119,7 @@ name = "osv-scanner"
 [[plugin]]
 name = "radarlint-ruby"
 
-[[ignore]]
+[[exclude]]
 plugins = ['radarlint-ruby']
 file_patterns = ['spec/**']
 
