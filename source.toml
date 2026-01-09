@@ -71,11 +71,10 @@ mode = "comment"
 threshold = 4
 
 [smells.file_complexity]
-threshold = 55
 enabled = false
 
 [smells.return_statements]
-threshold = 4
+threshold = 3
 
 [smells.nested_control_flow]
 threshold = 4
@@ -126,16 +125,6 @@ file_patterns = ['spec/**']
 [[plugin]]
 name = "ripgrep"
 mode = "comment"
-
-[[plugin]]
-name = "rubocop"
-version = "1.65.1"
-package_file = "Gemfile"
-package_filters = ["rubocop"]
-
-[[plugin.fetch]]
-url = "https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-1-60-all.yml"
-path = ".rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-ruby--rubocop-1-60-all-yml"
 
 [[plugin]]
 name = "shellcheck"
