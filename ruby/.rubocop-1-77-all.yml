@@ -6,6 +6,7 @@ plugins:
   - rubocop-capybara
   - rubocop-factory_bot
   - rubocop-rspec_rails
+  - rubocop-qcustom
 
 AllCops:
   Exclude:
@@ -66,6 +67,7 @@ Metrics/AbcSize:
   - spec/**/*
 Metrics/BlockLength:
   Exclude:
+  - Gemfile
   - lib/tasks/**/*
   - spec/**/*
 Metrics/ClassLength:
@@ -239,6 +241,7 @@ FactoryBot/AssociationStyle:
   # gem 'rubocop-factory_bot', '~> 2.27.1'
   # gem 'rubocop-graphql', '~> 1.5.6'
   # gem 'rubocop-performance', '~> 1.26.0'
+  # gem 'rubocop-qcustom', tag: 'v0.0.2' git: 'git@github.com:q-centrix/rubocop-qcustom'
   # gem 'rubocop-rails', '~> 2.33.3'
   # gem 'rubocop-rspec', '>= 3.7.0'
   # gem 'rubocop-rspec_rails', '~> 2.31.0'

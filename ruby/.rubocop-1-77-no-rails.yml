@@ -1,3 +1,6 @@
+plugins:
+  - rubocop-qcustom
+
 AllCops:
   Exclude:
     - '**/*.axlsx'
@@ -57,6 +60,7 @@ Metrics/AbcSize:
   - spec/**/*
 Metrics/BlockLength:
   Exclude:
+  - Gemfile
   - lib/tasks/**/*
   - spec/**/*
 Metrics/ClassLength:
@@ -129,3 +133,4 @@ Style/WordArray:
 
 # For this file, you will need the following gems:
   # gem 'rubocop', '~> 1.77.0'
+  # gem 'rubocop-qcustom', tag: 'v0.0.2' git: 'git@github.com:q-centrix/rubocop-qcustom'
