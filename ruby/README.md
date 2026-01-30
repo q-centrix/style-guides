@@ -3,7 +3,7 @@ Reference the rubocop config that you want from another repo by inheriting from 
 
 Here is an example of what your repo's local `.rubocop.yml` will look like
 ```
-inherit_from: https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-0-77.yml
+inherit_from: https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-1-77.yml
 ```
 
 Note: Anything you add to your local yml file will overwrite what is in the inherited file. Read [the docs](https://docs.rubocop.org/rubocop/1.50/configuration.html#inheriting-from-another-configuration-file-in-the-project) for more information on precedence. This can be helpful if you want to add in something such as rubocop-rspec but want to disable/enable cops as you fix them over time (see [auto gen configs](https://docs.rubocop.org/rubocop/configuration.html#automatically-generated-configuration)).
@@ -15,7 +15,7 @@ Note: Anything you add to your local yml file will overwrite what is in the inhe
         ```
         rubocop:
           enabled: true
-          channel: rubocop-0-77
+          channel: rubocop-1-77
         ```
 2. `.gitgnore`
     1. remove `.rubocop.yml`
@@ -31,12 +31,12 @@ When you are ready to upgrade rubocop to a different version, change the file yo
         ```
           prepare:
             fetch:
-            - url: "https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-0-77.yml"
-              path: ".rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-ruby--rubocop-0-77-yml"
+            - url: "https://raw.githubusercontent.com/q-centrix/style-guides/main/ruby/.rubocop-1-77-all.yml"
+              path: ".rubocop-https---raw-githubusercontent-com-q-centrix-style-guides-main-ruby--rubocop-1-77-all.yml"
         ```
     2. The [rubocop channel](https://docs.codeclimate.com/docs/rubocop#using-rubocops-newer-versions) should specify the correct version. Available channels can be found [here](https://github.com/codeclimate/codeclimate-rubocop/branches/all?utf8=%E2%9C%93&query=channel%2Frubocop). **IMPORTANT NOTE: For version 1.60 you should use `beta` as the channel.**
         ```
-          channel: rubocop-0-77
+          channel: rubocop-1-77
         ```
 3. Make sure your `Gemfile` or `gemspec` specifies the same version of rubocop as the config you are using.
 4. If you are going to use other rubocop gems (i.e. rubocop-rspec or rubocop-graphql) you need to add them to your gemfile. (These will also be listed under `require` at the top of the yml file)
