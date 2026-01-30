@@ -66,6 +66,7 @@ Metrics/AbcSize:
   - spec/**/*
 Metrics/BlockLength:
   Exclude:
+  - Gemfile
   - lib/tasks/**/*
   - spec/**/*
 Metrics/ClassLength:
