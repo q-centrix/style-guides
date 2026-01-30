@@ -133,8 +133,4 @@ Style/WordArray:
 
 # For this file, you will need the following gems:
   # gem 'rubocop', '~> 1.77.0'
-  # gem(
-  #   'rubocop-qcustom',
-  #   tag: 'v0.0.1'
-  #   git: 'git@github.com:q-centrix/rubocop-qcustom'
-  # )
+  # gem 'rubocop-qcustom', tag: 'v0.0.2' git: 'git@github.com:q-centrix/rubocop-qcustom'
