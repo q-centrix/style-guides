@@ -149,6 +149,8 @@ Rails/HasManyOrHasOneDependent:
   Enabled: false
 Rails/LexicallyScopedActionFilter:
   Enabled: false
+Rails/RedundantPresenceValidationOnBelongsTo:
+  Enabled: false
 Rails/ToFormattedS:
   EnforcedStyle: to_formatted_s
 Rails/WhereExists:
