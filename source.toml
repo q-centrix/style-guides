@@ -43,6 +43,7 @@ exclude_patterns = [
   "bin/",
   "circle.yml",
   "CHANGELOG.md",
+  "CLAUDE.md",
   "config/",
   "db/data/",
   "db/migrate/",
