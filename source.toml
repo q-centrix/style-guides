@@ -52,6 +52,7 @@ exclude_patterns = [
   "LICENSE",
   "Rakefile",
   "README.md",
+  "SKILL.md",
 ]
 
 test_patterns = [
