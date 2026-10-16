@@ -194,7 +194,7 @@ RSpec/NestedGroups:
 
 
 Capybara/AmbiguousClick:
-  Enabled: true
+  Enabled: false
 Capybara/RSpec/NegationMatcherAfterVisit:
   Enabled: true
 Capybara/RSpec/NegationMatcher:
