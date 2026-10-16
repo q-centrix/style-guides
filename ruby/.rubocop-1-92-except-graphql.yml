@@ -27,8 +27,8 @@ AllCops:
   NewCops: enable
 
 # If the cop is not mentioned here, then we are using the defualts cops
-# The default config can be found at https://github.com/rubocop/rubocop/blob/v1.91.0/config/default.yml
-# Documentation can be found at https://docs.rubocop.org/rubocop/1.91/cops.html
+# The default config can be found at https://github.com/rubocop/rubocop/blob/v1.92.0/config/default.yml
+# Documentation can be found at https://docs.rubocop.org/rubocop/1.92/cops.html
 
 Gemspec/DevelopmentDependencies:
   EnforcedStyle: gemspec
@@ -138,7 +138,7 @@ Style/WordArray:
   WordRegex: !ruby/regexp /\A[\p{Word}]+\z/
 
 # for rubocop-rails
-# Documentation can be found at https://docs.rubocop.org/rubocop-rails/2.33/cops_rails.html
+# Documentation can be found at https://docs.rubocop.org/rubocop-rails/2.38/cops_rails.html
 
 Rails/CompactBlank:
   Enabled: false
@@ -158,7 +158,7 @@ Rails/WhereExists:
   EnforcedStyle: where
 
 # for rubocop-rspec
-# Documentation can be found at https://docs.rubocop.org/rubocop-rspec/latest/cops_rspec.html
+# Documentation can be found at https://docs.rubocop.org/rubocop-rspec/3.10/cops_rspec.html
 
 RSpec/AlignLeftLetBrace:
   Enabled: true
@@ -190,7 +190,7 @@ RSpec/NestedGroups:
   Enabled: false
 
 # for rubocop-capybara
-# Documentation can be found at https://docs.rubocop.org/rubocop-capybara/cops_capybara.html
+# Documentation can be found at https://docs.rubocop.org/rubocop-capybara/3.0/cops_capybara.html
 
 
 Capybara/AmbiguousClick:
@@ -201,7 +201,7 @@ Capybara/RSpec/NegationMatcher:
   EnforcedStyle: not_to
 
 # for rubocop-performance
-# Documentation can be found at https://docs.rubocop.org/rubocop-performance/latest/cops_performance.html
+# Documentation can be found at https://docs.rubocop.org/rubocop-performance/1.27/cops_performance.html
 
 Performance/CaseWhenSplat:
   Enabled: true
@@ -213,7 +213,7 @@ Performance/SelectMap:
   Enabled: true
 
 # for Factory_bot
-# Documentation can be found at https://docs.rubocop.org/rubocop-factory_bot/cops_factorybot.html
+# Documentation can be found at https://docs.rubocop.org/rubocop-factory_bot/2.28/cops_factorybot.html
 
 FactoryBot/AssociationStyle:
   Enabled: true
