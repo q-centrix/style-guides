@@ -202,7 +202,7 @@ Capybara/RSpec/NegationMatcher:
   EnforcedStyle: not_to
 
 # for rubocop-performance
-# Documentation can be found at https://docs.rubocop.org/rubocop-performance/1.26/cops_performance.html
+# Documentation can be found at https://docs.rubocop.org/rubocop-performance/latest/cops_performance.html
 
 Performance/CaseWhenSplat:
   Enabled: true
@@ -214,7 +214,7 @@ Performance/SelectMap:
   Enabled: true
 
 # for rubocop-graphql
-# Documentation can be found at https://www.rubydoc.info/gems/rubocop-graphql/1.6.0/RuboCop/Cop/GraphQL
+# Documentation can be found at https://www.rubydoc.info/gems/rubocop-graphql/1.8.0/RuboCop/Cop/GraphQL
 
 GraphQL/GraphqlName:
   Enabled: false
@@ -240,9 +240,9 @@ FactoryBot/AssociationStyle:
   # gem 'rubocop', '~> 1.91.0'
   # gem 'rubocop-capybara', '~> 3.0.0'
   # gem 'rubocop-factory_bot', '~> 2.28.0'
-  # gem 'rubocop-graphql', '~> 1.6'
+  # gem 'rubocop-graphql', '~> 1.8.0'
   # gem 'rubocop-migration', '~> 0.7.1'
-  # gem 'rubocop-performance', '~> 1.26.0'
+  # gem 'rubocop-performance', '~> 1.27.0'
   # gem 'rubocop-qcustom', tag: 'v0.1.0', git: 'git@github.com:q-centrix/rubocop-qcustom'
   # gem 'rubocop-rails', '~> 2.35.0'
   # gem 'rubocop-rspec', '~> 3.10.2'
