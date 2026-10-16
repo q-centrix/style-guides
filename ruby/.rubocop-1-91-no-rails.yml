@@ -132,5 +132,5 @@ Style/WordArray:
 
 
 # For this file, you will need the following gems:
-  # gem 'rubocop', '~> 1.91.0'
+  # gem 'rubocop', '~> 1.92.0'
   # gem 'rubocop-qcustom', tag: 'v0.1.0', git: 'git@github.com:q-centrix/rubocop-qcustom'
